@@ -1,0 +1,218 @@
+#Greatest of two numbers
+
+a=int(input())
+b=int(input())
+if a==b:
+    print(f'{a} is equal to {b}')
+elif a>=b:
+    print(f'{a} is greater than {b}')
+else:
+    print(f'{a} is less than {b}')
+    
+    
+#Vowel or consonants
+
+a=input()
+vowels="aeiouAEIOU"
+if a>='a' and a<='z' or a>='A' and a<='Z':
+    if a in vowels:
+        print("vowel")
+    else:
+        print("consonant")
+else:
+      print("not an alphabet")
+      
+      
+ #Grading system
+ 
+ a=int(input())
+if a==100:
+    print("s")
+elif a<100 and a>=90:
+    print("A")
+elif a<90 and a>=80:
+    print("B")
+elif a<80 and a>=70:
+    print("C")
+elif a<70 and a>=60:
+    print("D")
+elif a<60 and a>=50:
+    print("E")
+elif a<50:
+    print("F")
+else:
+    print("invalid input")
+    
+    
+#Profit or loss
+
+X=float(input())
+Y=float(input())
+W=X/12
+l=(Y-W)*12
+print('enter the price of a dozen mangoes')
+print('enter the price at which 1 mango is being sold')
+if (W>Y):
+    print(f'loss:Rs.','%.2f' %l)
+elif(W<Y):
+    print(f'profit:Rs.','%.2f' %l)
+else:
+    print(f'no profit nor loss')
+    
+    
+#Fee collection
+
+print("Enter the student type")
+X=str(input())
+if(X=="MSDS"):
+    TF=float(input('Enter tuition fee\n'))
+    BF=float(input('Enter bus fee\n'))
+    print("The fees to be paid by the student is Rs.","%.2f" %(TF+BF))
+elif(X=="MSH"):
+    TF=float(input("Enter tuition fee\n"))
+    HF=float(input("Enter hostel fee\n"))
+    print("The fees to be paid by the student is Rs.","%.2f" %(TF+HF))
+elif(X=="MGSDS"):
+    TF=float(input("Enter tuition fee\n"))
+    BF=float(input("Enter bus fee\n"))  
+    print("The fees to be paid by the student is Rs.","%.2f" %((1.5*TF)+BF))
+elif(X=="MGSH"):    
+    TF=float(input("Enter tuition fee\n"))
+    HF=float(input("Enter hostel fee\n"))
+    print("The fees to be paid by the student is Rs.","%.2f" %((1.5*TF)+HF))
+    
+ 
+ #Y2K Problem detector
+ 
+ BY=int(input("Enter Year of Birth\n"))
+CY=int(input("Enter Current year\n"))
+if BY>CY:
+    print("Your age is",(100+CY)-BY)
+else:
+    print("Your age is",CY-BY)
+    
+    
+#Lab Allocation
+
+X=int(input("Enter X \n"))
+Y=int(input("Enter Y \n"))
+Z=int(input("Enter Z \n"))
+if (X<Y) and (X<Z):
+    print("L1 has the minimal seating capacity")
+elif(Y<Z) and (Y<X):
+    print("L2 has the minimal seating capacity")
+else:
+    print("L3 has the minimal seating capacity")
+    
+    
+ #Gardening-1
+ 
+ X=int(input("Enter X \n"))
+Y=int(input("Enter Y \n"))
+Z=int(input("Enter Z \n"))
+if (X<Y) and (X<Z):
+    print("L1 has the minimal seating capacity")
+elif(Y<Z) and (Y<X):
+    print("L2 has the minimal seating capacity")
+else:
+    print("L3 has the minimal seating capacity")
+    
+    
+#Hotel Tariff Calculator
+
+X=int(input())
+Y=int(input())
+Z=int(input())
+if (X==4 or X==5 or X==6 or X==11 or X==12):
+    print('Hotel tariff:Rs.','%.2f' %((1.2*Y)*Z))
+elif(X==1 or X==2 or X==3 or X==7 or X==8 or X==9 or X==10):
+    print('Hotel tariff:Rs.','%.2f' %(Y*Z))
+else:
+    print('invalid input')
+    
+    
+#RGY Lights
+
+s=float(input())
+d=float(input())
+t=float(input())
+if (t<=s*d):
+    print("yes")
+else:
+    print("no")
+    
+    
+#Budget
+
+A=int(input())
+B=int(input())
+C=int(input())
+D=int(input())
+E=int(input())
+x=A*350.34+B*230.90+C*190.55+D*125.30+E*180.90
+if (x<=15000):
+    print("yes")
+else:
+    print("no")
+    
+    
+#Sece Dining
+
+x=str(input())
+y=int(input())
+if(x=='front' and y==1):
+    print('Left Handed')
+elif(x=='rear' and y==2):
+    print('Left Handed')
+elif(x=='front' and y==2):
+    print('Right Handed')
+elif(x=='rear' and y==1):
+    print('Right Handed')
+    
+    
+#Intersection of a circle
+
+x1=int(input())
+y1=int(input())
+r1=int(input())
+x2=int(input())
+y2=int(input())
+r2=int(input())
+d=((((x1-x2)**2)+((y1-y2)**2))**(1/2))
+if(r1+r2)==d:
+    print('The circles are tangential')
+elif(r1+r2)>d:
+    print('The circles overlap')
+else:
+    ('The circles do not overlap')
+    
+    
+#Microwave oven
+
+x1=int(input())
+y1=int(input())
+r1=int(input())
+x2=int(input())
+y2=int(input())
+r2=int(input())
+d=((((x1-x2)**2)+((y1-y2)**2))**(1/2))
+if(r1+r2)==d:
+    print('The circles are tangential')
+elif(r1+r2)>d:
+    print('The circles overlap')
+else:
+    ('The circles do not overlap')
+    
+    
+#Ameoba multiplication
+
+i=int(input("Enter the number of months \n"))
+a=0
+b=1
+count=2
+while count<i:
+    c=a+b
+    a=b
+    b=c
+    count=count+1
+print("The amoeba size is",c)
